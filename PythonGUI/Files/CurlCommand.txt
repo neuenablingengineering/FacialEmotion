@@ -1,0 +1,1 @@
+curl -H "Ocp-Apim-Subscription-Key: 5b2a0edc8b484c5cb10461ab39bf71f4" "https://eastus.api.cognitive.microsoft.com/face/v1.0/detect?returnFaceId=false&returnFaceLandmarks=false&returnFaceAttributes=emotion" -H "Content-Type: application/json" --data-ascii "{\"url\":\"https://upload.wikimedia.org/wikipedia/commons/c/c3/RH_Louise_Lillian_Gish.jpg\"}"

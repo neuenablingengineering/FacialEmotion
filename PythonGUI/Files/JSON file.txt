@@ -1,0 +1,27 @@
+import json
+from pprint import pprint
+
+with open('output.json', 'r') as f:
+    data = json.load(f) #open JSON file into a dict named data
+
+
+for output in data: #display attributes of data
+    #please note that dict is stored in different format and should be accessed
+    #as shown below
+    sad = (output['faceAttributes']['emotion']['sadness']) 
+    neutral = (output['faceAttributes']['emotion']['neutral'])
+    print(output['faceAttributes']['emotion']['sadness'])
+    print(output['faceAttributes']['emotion']['neutral'])
+    print(output['faceAttributes']['emotion']['contempt'])
+    print(output['faceAttributes']['emotion']['disgust'])
+    print(output['faceAttributes']['emotion']['anger'])
+    print(output['faceAttributes']['emotion']['surprise'])
+    print(output['faceAttributes']['emotion']['fear'])
+    print(output['faceAttributes']['emotion']['happiness'])
+
+    if neutral > sad: #example comparison of data
+        print(neutral)
+    else:    
+        print(sad)
+
+    print(data) #print raw dict
