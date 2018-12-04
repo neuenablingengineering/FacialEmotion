@@ -1000,7 +1000,7 @@ background-color: rgb(179, 227, 178);</string>
               </font>
              </property>
              <property name="text">
-              <string>Happiness</string>
+              <string>Happy</string>
              </property>
              <property name="alignment">
               <set>Qt::AlignCenter</set>
