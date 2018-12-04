@@ -150,7 +150,7 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
 
                 if globalvar.Get_value('Score') >10:
                     globalvar.Set_value('Score', 10)
-                    self.OpenWarningBox('Congrats£¬you gain 10 score~')
+                    self.OpenWarningBox('Congrats! You did it!')
                 else:
                     self.timer.start(50)
                     globalvar.Set_value('time_count', 0)
@@ -171,7 +171,7 @@ class MyApp(QtWidgets.QMainWindow, Ui_MainWindow):
 
             else:
                 png = QPixmap('./Files/wrongcross.png')
-                self.label_13.setText('Think about it again~')
+                self.label_13.setText('Try Again~')
                 sound = pygame.mixer.Sound(r"./Files/wrong.wav")
                 sound.set_volume(1)
                 sound.play()
