@@ -1,1 +1,2 @@
-# eece2750
+# EECE2750
+# FacialEmotionRecognition
